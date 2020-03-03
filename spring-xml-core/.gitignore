@@ -1,0 +1,28 @@
+# ignoring IntelliJ Idea IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+*.bak
+
+# ignoring Eclipse IDE files
+bin
+.classpath
+.project
+.settings/
+.loadpath
+.factorypath
+
+# ignoring Maven/Gradle build tool files
+target/
+build/
+.gradle
+gradle/tools
+
+test-output/
+
+# ignoring git properties file
+git.properties
+
+# Log files
+*.log

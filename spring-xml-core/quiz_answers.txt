@@ -1,0 +1,85 @@
+Spring Architecture
+-------------------
+Q: What are the main Spring features?
+A: AOP support; Lightweight framework container; Inversion of control implementation
+
+Q: How many jar files do new versions of Spring consist of?
+A: Many
+
+Q: What are some modules that present in Spring?
+A: AOP; Test; Beans; Web; Context
+
+Q: Which modules are part of Data Access layer in Spring Framework?
+A: JPA; JMS
+
+Q: What is hard to do when high coupling present?
+A: Easy swap of implementations; Unit-test in isolation
+
+Dependency Injection
+--------------------
+Q: How to manage static data in your application?
+A: Externalize to non-binary non-code files Externalize to non-binary non-code files
+
+Q: What are main attributes of loose coupling?
+A: Dependencies are injected into objects
+
+Q: What are the functions of container?
+A: Instantiate objects; Inject objects into one another; Provide objects to the main application
+
+Q: What are the ways to get beans from container?
+A: Call container methods to get them; Navigate object graph; Receive beans automatically as they’re injected by container
+
+Q: What is the root tag in Spring XML?
+A: beans
+
+Q: What is defined in attributes of root tag in Spring XML?
+A: schemas; namespaces
+
+Bean Naming and Context Start-up
+--------------------------------
+Q: Can the id and name attributes be used at the same time?
+A: yes
+
+Q: How to define several different names for a bean?
+A: Inside 'name' attribute; Using separate tag 'alias'
+
+Q: Select correct forms to inject values through constructor?
+A: <constructor-arg value="abc"/>; <constructor-arg index="1" value="42"/>
+
+Q: How to specify type of constructor value that is injected?
+A: <constructor-arg type="java.lang.Integer"...
+
+Q: How to inject other beans using constructor?
+A: <constructor-arg ref="bean"/>
+
+Q: Which Spring container class supports only dependency injection?
+A: BeanFactory
+
+Q: How to get bean from container?
+A: ctx.getBean("bean")
+
+Scopes and Inner Beans
+----------------------
+Q: What are the possible bean scopes present in Spring?
+A: singleton; prototype; request; session; application
+
+Q: What is the default bean scope in Spring?
+A: singleton
+
+Q: What is true about inner beans?
+A: Can't be reused by other beans; Created when outer bean is initialized
+
+Q: How to define a static method that creates a bean?
+A: <bean factory-method="..."
+
+Initialize and Destroy
+----------------------
+Q:
+A:
+
+Q:
+A:
+
+Q:
+A:
+
